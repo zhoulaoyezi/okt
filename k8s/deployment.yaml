@@ -1,0 +1,34 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: okt
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: okt
+  template:
+    metadata:
+      labels:
+        app: okt
+    spec:
+      containers:
+      - image: okteto.dev/okt:latest
+        name: okt
+        ports:
+        - containerPort: 8080
+        env:
+        - name: PORT
+          value: "8080"
+        - name: Site
+          value: "https://github.com/happyevero/Html/raw/main/MeetApril-html.zip"
+        - name: Vless_UUID
+          value: "fd106b4d-8c25-4bf2-8999-d006b096e010"
+        - name: Vless_Path
+          value: "/llli"
+        - name: Vmess_UUID
+          value: "fd106b4d-8c25-4bf2-8999-d006b096e010"
+        - name: Vmess_Path
+          value: "/mmme"
+        - name: Share_Path
+          value: "/v2link"

@@ -1,0 +1,43 @@
+{
+  "name": "快速部署demo",
+  "description": "Deploy demo.",
+  "keywords": ["V", "X"],
+  "env": {
+    "Site": {
+      "description": "自定义伪装页面，例如：https://github.com/happyevero/Html/raw/main/S-html.zip ",
+      "value": "https://github.com/happyevero/Html/raw/main/S-html.zip"
+    },
+
+    "Vless_UUID": {
+      "description": "Vless uuid（http://www.uuid.online/在线生成）",
+      "value": "7bf88ae3-0069-4a5a-aee7-30419e4dd058"
+    },
+
+    "Vless_Path": {
+      "description": "Path路径，默认/s233,为了安全你也可以使用uuid替换，/不能少。如果开启反代，不要与反代网站存在的uri相同",
+      "value": "/vl555"
+    },
+    "Vmess_UUID": {
+      "description": "Vmess uuid（http://www.uuid.online/在线生成）",
+      "value": "7bf88ae3-0069-4a5a-aee7-30419e4dd058"
+    },
+
+    "Vmess_Path": {
+      "description": "Path路径，默认/s244,为了安全你也可以使用uuid替换,/不能少。如果开启反代，不要与反代网站存在的uri相同",
+      "value": "/vm666"
+    },
+    
+    "Share_Path": {
+      "description": "Share path, /v2link/index.html查看链接及二维码",
+      "value": "/v2link"
+    },
+
+    "VER": {
+       "description": "Xray版本，默认latest安装最新版本，可以去https://github.com/XTLS/Xray-core/releases选择版本 （例如：1.2.2)",
+       "value": "latest"
+     }
+  },
+  "website": "",
+  "repository": "",
+  "stack": "container"
+ }
